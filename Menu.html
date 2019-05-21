@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Menu.html</title>
+<script>
+function xlTim2(gTri, e)
+{
+var chuoi ="thiên thanh,shop,thời trang,giầy dép,quần áo,mắt kính"; var chuoitim =
+gTri.trim().toLowerCase(); if (e.keyCode==13)
+{
+if (chuoi.indexOf(chuoitim)>=0)
+alert('Tìm thấy'); else
+alert('Không tìm thấy');
+}
+}
+function xlTim(gTri)
+{
+var chuoi ="thiên thanh,shop,thời trang,giầy dép,quần áo,mắt kính"; var chuoitim =gTri.trim().toLowerCase()
+{
+if (chuoi.indexOf(chuoitim)>=0)
+alert('Tìm thấy'); else
+alert('Không tìm thấy');
+}
+}
+</script>
+</head>
+<link rel="stylesheet" type="text/css" href="project.css"/>
+<body>
+<div id="menu">
+  <table style="color:#FFF;padding-top:0px;padding-left:10px; border:0px">
+    <tr>
+      <th class="1" style="width:90px; height:50px"><a href="project.html" target="_blank" title="Trang chủ" style="color:#FFF">Trang chủ</a></th>
+      <th class="1" style="width:100px"><a href="#" target="_blank" title="Quần áo nữ" style="color:#FFF">Quần áo nữ</a></th>
+      <th class="1" style="width:100px"><a href="#" target="_blank" title="Quần áo nam" style="color:#FFF">Quần áo nam</a></th>
+      <th class="1" style="width:100px"><a href="#" target="_blank" title="Phụ kiện" style="color:#FFF">Phụ kiện</a></th>
+      <th class="1" style="width:130px"><a href="#" target="_blank" title="Tin tức sự kiện" style="color:#FFF">Tin tức sự kiện</a></th>
+      <td ><a href="#" target="_blank" title="Liên Hệ" style="color:#FFF"> <img src="images/Email.gif"/> Liên hệ</a></td>
+      <td style="width:150px;"><input type="text" id="txtTim" value="Tên sản phẩm"
+			onfocus="if(value=='Tên sản phẩm'){value=''}"
+			onblur="if(value=='') {value='Tên sản phẩm'}"
+			onkeypress="xlTim2(this.value, window.event);" />
+      </td>
+      <td><input type="image" id="btnTim" title="tim sản phẩm" src="images/Search2.png" onclick="xlTim(txtTim.value)"/></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

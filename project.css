@@ -1,0 +1,175 @@
+@charset "utf-8";
+#header {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid #8C0209;
+}
+
+#menu table tr th:hover {
+    background: #F09;
+}
+
+#menu {
+    width: 990px;
+    margin: 0 auto;
+    height: 50px;
+    background: linear-gradient(to left, #d00618, #6e0001);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #930;
+}
+
+li {
+    list-style: none;
+}
+
+.subsidebar {
+    height: 30px;
+    background: linear-gradient(to left, #d00618, #6e0001);
+    color: #FFFFFF;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 15px 0px 15px;
+}
+
+.spm ul li {
+    padding-left: -20px;
+}
+
+.nam1 td a img {
+    width: 183px;
+    height: 200px;
+}
+
+.nam2 a {
+    width: 183px;
+    color: #03F;
+    text-decoration: none
+}
+
+.nam2 td span {
+    color: #F03;
+}
+
+.GH {
+    font-weight: bolder
+}
+
+.subsidebar2 table tr td {
+    text-align: center;
+    color: #F00
+}
+
+.align-right {
+    text-align: right;
+}
+
+h2 {
+    color: #C00;
+}
+
+.red {
+    padding-left: 20px;
+    color: red;
+}
+
+.black {
+    font-weight: bolder;
+}
+
+#maincontent .Kh {
+    height: 150px;
+}
+
+#maincontent .kh1 {
+    width: 23%;
+    height: 80px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+    border: 2px solid aqua;
+    border-radius: 15px;
+    display: inline-block;
+    transition: 1s ease-out;
+    transform: skew(5deg, 10deg);
+    background-color: #8C0209
+}
+
+#maincontent .kh1:hover,
+.kh2:hover {
+    transform: rotate(360deg);
+    background-color: #1abc9c;
+    border: 2px solid black;
+}
+
+
+/* #maincontent .kh2:hover {
+    transform: rotate(360deg);
+    background-color: #1abc9c;
+    border: 2px solid black;
+}
+*/
+
+#maincontent .kh3:hover {
+    transform: rotate(360deg);
+    background-color: #1abc9c;
+    border: 2px solid black;
+}
+
+#maincontent .kh4:hover {
+    transform: rotate(360deg);
+    background-color: #1abc9c;
+    border: 2px solid black;
+}
+
+#maincontent .kh2 {
+    margin-left: -15px;
+    display: inline-block;
+    width: 23%;
+    height: 80px;
+    font-size: 18px;
+    color: deeppink;
+    text-align: center;
+    padding-top: 15px;
+    border: 2px solid deeppink;
+    border-radius: 15px;
+    transition: 1s ease-in-out;
+    transform: rotate(-30deg);
+}
+
+#maincontent .kh3 {
+    margin-left: -15px;
+    display: inline-block;
+    width: 23%;
+    height: 80px;
+    font-size: 18px;
+    color: greenyellow;
+    text-align: center;
+    padding-top: 15px;
+    border: 2px solid greenyellow;
+    border-radius: 15px;
+    transition: 1s ease-in-out;
+    transform: rotate(10deg, 20deg);
+}
+
+#maincontent .kh4 {
+    display: inline-block;
+    margin-left: -20px;
+    width: 23%;
+    height: 80px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+    border: 2px solid aqua;
+    border-radius: 15px;
+    transition: 1s ease-in-out;
+    transform: skew(-10deg, -20deg);
+}

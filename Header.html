@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Header.html</title>
+<script type="text/javascript" >
+function xlDangNhap(ten, mkhau)
+{
+if (ten.toLowerCase()=="thienthanh")
+if (mkhau=="abc")
+alert('Đăng nhập thành công');
+else
+alert('Sai mật khẩu');
+else
+alert('Không có user này');
+}
+</script>
+</head>
+<link rel="stylesheet" type="text/css" href="project.css"/>
+<body>
+<div style="width: 1000px;height: 98px; border:0px solid #000">
+  <div  id="logo" style="width: 1000px;height: 98px; border:0px solid #000;float:left;padding-left:0px " >
+    <div style="width:650px; float:left">
+      <p ><img src="images/Logo.gif" style="padding-left:20px"/><span style=" color:#F00; font-size:36px;padding-left:10px;font-family:'Times New Roman', Times, serif; font-weight:bolder"><span style="color:#000 ">Shop</span>Thiên Thanh</span>THỜI TRANG NAM NỮ</p>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td><label for = "username">Ten</label></td>
+          <td><input style="width:100px" type="text" name="username" id="username" required placeholder="input your name"</></td>
+          <td><label  for = "password">Mật khẩu</label></td>
+          <td><input style="width:100px" type="password" name="password" id="password"</></td>
+          <td><input type="sumbit" value="" style="background-image:url(images/Login.jpg); height:25px;width:30px" Onclick = "xlDangNhap(username.value, password.value);" id="login" title="Đăng nhập"
+    		></td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:right" align="right"><a href="Dangky.html" target="_blank" title="đăng ký" style="color:#FFF"><img src="images/DangKy.gif" /></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

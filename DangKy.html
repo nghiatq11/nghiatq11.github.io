@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DangKy.html</title>
+<link rel="stylesheet" type="text/css" href="project.css"/>
+<script>
+
+function xlDangky(){
+	var kq="";
+	var username = document.getElementById("username");
+	var password = document.getElementById("password");
+	var name = document.getElementById("name");
+	var gender= document.getElementById("gd");
+	var birthday = document.getElementById("date");
+	var job = document.getElementById("job");
+	var email = document.getElementById("email");
+	var phone = document.getElementById("phone");
+	var other =document.getElementById("infor");
+	kq = "<b>Xác nhận thông tin</b><br/>";
+    kq += "<b>Tên đăng nhập: </b>" + username.value + "<br/>";
+    kq += "<b>Mật khẩu: </b>" + password.value + "<br/>";
+    kq += "<b>Họ và tên: </b>" + name.value + "<br/>";
+	
+    kq += "<b>Phái: </b>" + gender.value + "<br/>";
+	
+    kq += "<b>Ngày Sinh: </b>" + birthday.value + "<br/>";
+    kq += "<b>Nghề nghiệp: </b>" + job.value + "<br/>";
+    kq += "<b>Email: </b>" + email.value + "<br/>";
+    kq += "<b>Điện Thoại: </b>" + phone.value + "<br/>";
+    kq += "<b>Ghi chú: </b>" + other.value + "<br/>";  
+	  
+    document.getElementById("op").innerHTML=kq;
+}
+	</script>
+</head>
+
+<body style="margin-top:20px; padding:0;background:#787878;">
+<!-- start header -->
+<div id="header" style="width: 1000px;height: 98px; border:0px solid #000">
+  <iframe src="Header.html" height="98px" width="100%" scrolling="no"style="border: none"> </iframe>
+</div>
+<!-- end header --> 
+<!-- start menu -->
+<section id="menuContaniner" style="width: 990px; margin: 0 auto;background-color:
+#FFFFFF; border: 0px solid #8C0209;padding: 0px 5px 0px 5px">
+  <iframe src="Menu.html" height="58px" width="100%" scrolling="no"style="border: none"> </iframe>
+</section>
+
+<!-- end menu --> 
+<!-- start content Page -->
+<div id="mainContainer" style="width: 990px; margin: 0 auto;background-color: #FFFFFF;border: 1px solid #8C0209;padding: 20px 5px 0px 5px"> 
+  <!-- Muc 1-->
+  <div id="sidebar1" style="width: 230px;font-size: 12px;float: left; ">
+    <div style="height:auto; width:220px">
+      <iframe src="SanPhamMoi.html" height="370px" scrolling="no"style="border: none"> </iframe>
+    </div>
+    <div style="height:auto; width:220px" >
+      <iframe src="HoTroOnline.html"height="280px" scrolling="no"style="border: none"> </iframe>
+    </div>
+    <div style="height:auto; width:220px" >
+      <iframe src="ThongKe.html"height="150px" scrolling="no"style="border: none"> </iframe>
+    </div>
+  </div>
+  <!-- end muc1 --> 
+  <!-- muc 2 -->
+  <div id="maincontent" style="width:513px; height:1000px; float:left; margin:7px;border: 1px solid #903;">
+    <div style="width:490px; height:430px; padding-left:40px">
+      <div style="color:#F00; font-weight:bolder;font-size:36px;width:400px; height:30px; padding-top:50px">Đăng ký thành viên mới</div>
+      <div style="width:400px; height:30px; padding:20px 0 0 0; color:#F00; text-align:center"> ----------------------------------------------------------</div>
+      <div style="width:400px; height:auto; padding-top:0px; ">
+        <form >
+          <table width="100%">
+            <tr >
+              <td class="align-right"><label for="username" >Tên đăng nhập:</label></td>
+              <td><input type="text" name="username" id="username" required size="30px"/></td>
+            </tr>
+            <tr>
+              <td class="align-right"><label for="password">Mật khẩu:</label></td>
+              <td><input  type="password" name="password" id="password" size="30px"/></td>
+            </tr>
+            <tr>
+              <td class="align-right"><label for="passagain">Nhập lại mật khẩu:</label></td>
+              <td><input  type="password" name="passagain" id="passagain" size="30px"/></td>
+            </tr>
+            <tr >
+              <td class="align-right"><label for="name" >Họ và tên:</label></td>
+              <td ><input type="text" name="name" id="name" required size="30px"/></td>
+            </tr>
+            <tr >
+              <td class="align-right"><label for="gd" >Giới tính:</label></td>
+              <td><input name="gt" type="radio" id="gd" value="nam" size="30px"/>nam
+              <input name="gt"  type="radio"  id="gd1" value="nữ" size="30px"/>nữ
+              </td>
+            </tr>
+            <tr >
+              <td class="align-right"><label for="date" >Ngày sinh:</label></td>
+              <td><input type="date" name="date" id="date" required size="30px"/></td>
+            </tr>
+            <tr >
+              <td class="align-right" ><label for="job" >Nghề Nghiệp:</label></td>
+              <td><select id="job" size="1" ssize="30px">
+                  <option value="bác sĩ">bác sỹ</option>
+                  <option value="Giáo viên">Giáo viên</option>
+                  <option value="Kỹ sư">Kỹ sư</option>
+                  <option value="Khác">Khác</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td class="align-right"><label for="email">email:</label></td>
+              <td><input  type="email" name="email" id="email" placeholder="admin@gmail.com" size="30px"/></td>
+            </tr>
+            <tr>
+              <td class="align-right"><label for="phone">Số điện thoại:</label></td>
+              <td><input type="text" name="phone" id="phone" required size="30px"/></td>
+            </tr>
+            <tr>
+              <td class="align-right"><label for="infor">Ghi chú:</label></td>
+              <td><textarea  name="infor" id="infor" ></textarea></td>
+            </tr>
+            
+           <tr>
+            <td colspan="2" align="center"><input type="image" src="images\Submit2.gif" title="chấp nhận" onclick="xlDangky();return false"  >
+              <p id="op" align="left" style="line-height:20px" ></p></td>
+          </tr>
+          </table>
+        </form>
+        
+      </div>
+    </div>
+    <div style="width:247px;height:241px; float:right; padding:0px; margin:-425px 0 303px 269px"><img src="images/bgDangKy.jpg" /> </div>
+  </div>
+  <!-- end muc2--> 
+  <!--mục 3 -->
+  
+  <div id="sidebar1" style="width: 230px;font-size: 12px;float: right; ">
+    <div style="height:auto; width:220px">
+      <iframe src="GioHang.html" height="150px" scrolling="no"style="border: none"> </iframe>
+    </div>
+    <div style="height:auto; width:220px" >
+      <iframe src="TrangTinThoiTrang.html"height="750px" scrolling="no"style="border: none" > </iframe>
+    </div>
+  </div>
+  <!-- end muc3 -->
+  <div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page --> 
+<!-- start Footer-->
+<div id="footer" style="width: 960px;height: 70px; margin: 0 auto;padding: 0 20px;
+background-color: #FFFFFF; border: 1px solid #8C0209;">
+  <iframe src="Footer.html" height="70px" width="100%" scrolling="no"style="border: none"> </iframe>
+</div>
+</body>
+</html>
